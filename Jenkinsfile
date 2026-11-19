@@ -43,7 +43,7 @@ pipeline {
     }
 
     parameters {
-        choice(name: 'DEVICE', choices: ['Both', 'Pixel 7', 'iPhone 16 Pro Max'], description: 'Phone to imitate (Pixel 7 = Android, iPhone = iOS)')
+        choice(name: 'DEVICE', choices: ['iPhone 16 Pro Max', 'Pixel 7', 'Both'], description: 'Phone to imitate (Pixel 7 = Android, iPhone = iOS)')
         booleanParam(name: 'HEADLESS', defaultValue: true, description: 'Run Chrome without a window (needed on a server without a screen)')
         string(name: 'TAGS', defaultValue: '@checkout', description: 'Cucumber tags to run, e.g. @checkout, @negative, @smoke, @checkout or @negative')
     }
