@@ -13,7 +13,7 @@ public class CartPage {
 	// Real locators (istyle.ae cart): the quantity box and its + button
 	By quantity = By.xpath("//input[contains(@class,'quantity__input')]");
 	By plusButton = By.xpath("//button[@name='plus']");
-	By checkoutButton = By.id("checkout1");
+	By checkoutButton = By.id("checkout");
 
 	public CartPage(WebDriver driver) {
 		this.wait = new WaitUtils(driver);
